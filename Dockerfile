@@ -1,7 +1,7 @@
 FROM debian:latest
 MAINTAINER Alberto Gonzalez <alberto@oforte.net>
 # Instalar apache2 y configurar locales
-RUN apt-get update && apt-get install -y locales  locales-all apache2
+RUN apt-get update && apt-get install -y locales  locales-all apache2 curl
 RUN locale-gen es_ES.UTF-8
 EXPOSE 80
 VOLUME /var/www
