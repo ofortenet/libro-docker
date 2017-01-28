@@ -1,3 +1,5 @@
 sut:
   build: .
-  command: curl http://localhost
+  ports: 
+    - "8888:80"
+  command: curl http://localhost:8888
